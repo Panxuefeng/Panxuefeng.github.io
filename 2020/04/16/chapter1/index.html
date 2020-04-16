@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的博客</title>
+  <title>chapter1 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java,C++">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="第1章 开始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chapter1">
+<meta property="og:url" content="http://yoursite.com/2020/04/16/chapter1/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="Java,C++">
+<meta property="og:description" content="第1章 开始">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-16T08:59:45.889Z">
+<meta property="article:modified_time" content="2020-04-16T08:59:34.706Z">
 <meta property="article:author" content="panxuefeng">
 <meta name="twitter:card" content="summary">
   
@@ -158,37 +160,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-chapter18" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-chapter1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
          
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter18/">chapter18</a>
+    <h1 class="article-title" itemprop="name">
+      chapter1
     </h1>
   
 
                 <!--显示阅读次数-->
         
+          <br/>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+          <span class="icon-sort"></span>
+          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+          </span>
+          </a>
+          
           <div align="center" class="post-count">
-            字数：8.4k字 | 预计阅读时长：33分钟
+            字数：130字 | 预计阅读时长：1分钟
           </div>
         
-        <a href="/2020/04/16/chapter18/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:04:42.423Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
+        <a href="/2020/04/16/chapter1/" class="archive-article-date">
+  	<time datetime="2020-04-16T08:59:45.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第19章-特殊工具与技术"><a href="#第19章-特殊工具与技术" class="headerlink" title="第19章 特殊工具与技术"></a>第19章 特殊工具与技术</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter18/#more">more >></a>
-        
+        <h1 id="第1章-开始"><a href="#第1章-开始" class="headerlink" title="第1章 开始"></a>第1章 开始</h1><a id="more"></a>
+
+<p>最简单的<code>main</code>函数：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>C++包含两种注释，注释界定符<code>/**/</code>通常用于多行注释，而双斜杠<code>//</code>通常用于单行或半行注释。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* Simple main function:</span></span><br><span class="line"><span class="comment">* Read two numbers and write their sum</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>, val = <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// keep executing the while as long as val is less than or equal to 10</span></span><br><span class="line">    <span class="keyword">while</span> (val &lt;= <span class="number">10</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += val;  <span class="comment">// assigns sum + val to sum</span></span><br><span class="line">        ++val;       <span class="comment">// add 1 to val</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Sum of 1 to 10 inclusive is "</span>&lt;&lt; sum &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
     
@@ -208,16 +219,79 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter18/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/16/chapter1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/04/16/chapter2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          chapter2
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -237,744 +311,37 @@
 
 
 
-
-
-
   
-    <article id="post-chapter17" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter17/">chapter17</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：9.5k字 | 预计阅读时长：36分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter17/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:04:22.837Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第18章-用于大型程序的工具"><a href="#第18章-用于大型程序的工具" class="headerlink" title="第18章 用于大型程序的工具"></a>第18章 用于大型程序的工具</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter17/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter17/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter16" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter16/">chapter16</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：8.5k字 | 预计阅读时长：34分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter16/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:04:08.289Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第17章-标准库特殊设施"><a href="#第17章-标准库特殊设施" class="headerlink" title="第17章 标准库特殊设施"></a>第17章 标准库特殊设施</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter16/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter16/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter15" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter15/">chapter15</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：9.3k字 | 预计阅读时长：40分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter15/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:03:52.644Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第16章-模板与泛型编程"><a href="#第16章-模板与泛型编程" class="headerlink" title="第16章 模板与泛型编程"></a>第16章 模板与泛型编程</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter15/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter15/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter14/">chapter14</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：5.8k字 | 预计阅读时长：22分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter14/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:03:33.608Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第15章-面向对象程序设计"><a href="#第15章-面向对象程序设计" class="headerlink" title="第15章 面向对象程序设计"></a>第15章 面向对象程序设计</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter14/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter14/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter13" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter13/">chapter13</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：5k字 | 预计阅读时长：21分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter13/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:03:15.679Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第14章-重载运算与类型转换"><a href="#第14章-重载运算与类型转换" class="headerlink" title="第14章 重载运算与类型转换"></a>第14章 重载运算与类型转换</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter13/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter13/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter12/">chapter12</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：5k字 | 预计阅读时长：21分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter12/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:02:59.700Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第13章-拷贝控制"><a href="#第13章-拷贝控制" class="headerlink" title="第13章 拷贝控制"></a>第13章 拷贝控制</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter12/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter12/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter11/">chapter11</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：4.3k字 | 预计阅读时长：18分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter11/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:02:42.098Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第12章-动态内存"><a href="#第12章-动态内存" class="headerlink" title="第12章 动态内存"></a>第12章 动态内存</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter11/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter11/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter10/">chapter10</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：2.9k字 | 预计阅读时长：11分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter10/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:02:29.120Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第11章-关联容器"><a href="#第11章-关联容器" class="headerlink" title="第11章 关联容器"></a>第11章 关联容器</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter10/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter10/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-chapter9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/chapter9/">chapter9</a>
-    </h1>
-  
-
-                <!--显示阅读次数-->
-        
-          <div align="center" class="post-count">
-            字数：5.4k字 | 预计阅读时长：21分钟
-          </div>
-        
-        <a href="/2020/04/16/chapter9/" class="archive-article-date">
-  	<time datetime="2020-04-16T09:02:15.831Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第10章-泛型算法"><a href="#第10章-泛型算法" class="headerlink" title="第10章 泛型算法"></a>第10章 泛型算法</h1>
-        
-          <a class="article-more-a" href="/2020/04/16/chapter9/#more">more >></a>
-        
-      
-
-    
-
-  <div class="declare" hidden="hidden"></div>
-
-
-
-
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/chapter9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="chapter1" data-title="chapter1" data-url="http://yoursite.com/2020/04/16/chapter1/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
   
+
+  
+
+  
+
+  
+
+
 
 
           </div>
@@ -1003,8 +370,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
